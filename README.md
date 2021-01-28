@@ -7,17 +7,18 @@ In this lab, you'll be creating a Facebook timeline with multiple statuses, but 
 1. Run `npm install` to install your dependencies.
 1. Run `npm run start` to get your server up and running.
 1. Open up your text editor, and checkout `src/Timeline.js`. Right now, there's React code for one hardcoded status. We're going to refactor this code so that there is a `Timeline` component that renders multiple `Status` subcomponents.
-  1. Create a new file `Status.js` and create a React component in that file. Don't forget to import `React` and to export the component!
+  1. Create a new file `Status.js` and create a React component in that file. Don't forget to export the component!
   1. Move everything inside the `.status` element in the `Timeline` component into your new `Status` component.
   1. Import and render your new `Status` component within your `Timeline` component.
-1. Render three `Status` components inside your `Timeline` component. Right now all of them will have the same text and user information. Let's make that information dynamic.
+  1. Render three `Status` components inside your `Timeline` component. Right now all of them will have the same text and user information. Let's make that information dynamic.
 
 ![](img/statuses.png)
 
-  1. Make the status text into a `prop`. Pass different status text to each of your statuses.
-  1. Make the profile pic into a `prop`. Pass different profile pic links to each of your statuses. You can just pull an image from the internet!
-  1. Make the username into a `prop`. Pass different usernames text to each of your statuses.
-  1. Make the post date into a `prop`. Pass different dates text to each of your statuses.
+  1. Add a `status` prop to each `<Status />`. Pass different statuses to each of your `<Status />` components.
+  1. Add a `profilePic` prop to each `<Status />`. Pass different profile pic links to each of your `<Status />` components. You can just pull an image from the internet!
+   1. Add a `username` prop to each `<Status />`. Pass different usernames to each of your `<Status />` components.
+   1. Add a `date` prop to each `<Status />`. Pass different dates to each of your `<Status />` components.
+
 
 🙌🏻 Awesome! Now you should have a timeline that renders three different statuses made by three different users at different times!
 
